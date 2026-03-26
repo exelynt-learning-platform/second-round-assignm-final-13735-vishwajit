@@ -19,7 +19,7 @@ export const sendMessage = createAsyncThunk(
         ai: aiResponse.content,
       };
     } catch (error) {
-      return rejectWithValue("API ERROR");
+      return rejectWithValue("API error/issue occurs");
     }
   }
 );
